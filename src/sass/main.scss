@@ -1,1 +1,23 @@
-@use "/base/**.scss";
+
+@charset "UTF-8";
+
+// foundation
+@use "foundation/index";
+
+// global
+@use "global/variables";
+@use "global/font";
+
+// layout
+@use "layout/header";
+@use "layout/footer";
+@use "layout/sidebar";
+
+// modules
+@use "modules/nav";
+@use "modules/selected";
+
+
+
+
+

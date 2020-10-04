@@ -1,0 +1,22 @@
+// foundation/_base.scss
+@use "../foundation/index";
+@use "../global/variables";
+
+.#{lfl-o}-header {
+    .lfl-m-header {
+        padding: 4rem 0 3rem;
+        text-align: center;
+        &__title {
+            margin-bottom: 2rem;
+        }
+        &__subtitle {
+            margin-bottom: 3rem;
+        }
+    }
+}
+
+
+
+
+
+

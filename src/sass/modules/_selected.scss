@@ -1,0 +1,30 @@
+@use "global/variables";
+
+.#{lfl-o}-selected {
+    margin: 0 auto 4rem;
+    .lfl-m-selected__post {
+        display: flex;
+        justify-content: center;
+        &__list {
+            background: variables.$color-gray;
+            margin-right: 4rem;
+            position: relative;
+            top: 0;
+            left: 0;
+            max-height: 160px;
+            max-width: 240px;
+            a {
+                display: block;
+                &__label {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    padding: 5px 10px;
+                }
+            }
+        }
+        &__list:last-child {
+            margin-right: 0;
+        }
+    }
+}

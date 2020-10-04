@@ -1,0 +1,12 @@
+@use "../foundation/index";
+@use "../global/variables";
+
+.#{lfl-m}-header {
+    &__nav {
+        background: variables.$color-theme-blue;
+        display: flex;
+        flex-wrap: wrap;
+        height: 60px;
+        width: 100%;
+    }
+}

@@ -1,10 +1,9 @@
-"use strict";
-
 // gulpの読み込み
-const gulp = require("gulp");
+const gulp = require('gulp');
 // sassをコンパイルするプラグインを読み込み
-const sass = require("gulp-dart-sass");
+const sass = require("gulp-sass");
 const Fibers = require("fibers");
+// sass.compiler = require("sass") // dart-sassを指定
 
 const autoprefixer = require("gulp-autoprefixer");
 const notify = require("gulp-notify");
@@ -13,30 +12,29 @@ const plumber = require("gulp-plumber");
 const browser = require("browser-sync");
 const sourcemaps = require("gulp-sourcemaps");
 
-// const path = {
-//     src: {
-//         sass: "/src/sass/main.scss",
-//     },
-//     dist: {
-//         css: "/dist/css/"
-//     }
-// }
+const path = {
+    src: {
+        sass: "/src/sass/**/",
+    },
+    dist: {
+        css: "/dist/css/"
+    }
+}
 
 // sassをコンパイルするタスクの作成
-gulp.task("sass", done => {
+gulp.task("sass", () => {
     return (
         gulp
-            .src('src/sass/**.scss')
+            .src("/src/sass/**/**.scss")
+            // .src(path.src.sass)
             .pipe(plumber(notify.onError('Error:<%= error.message %>')))
-            .pipe(sourcemaps.init())
             .pipe(sass({
-                fiber: Fibers,
-                outputStyle: "expanded"
+                // fiber: Fibers,
+                outputStyle: "expanded",
             }))
             .pipe(autoprefixer())
             .pipe(cleancss())
             .pipe(gulp.dest("dist/css/"))
-            .pipe(sourcemaps.write())
             .pipe(browser.reload({stream:true}))
             .pipe(notify("Sassをコンパイルしました!"))
     );
@@ -57,5 +55,5 @@ gulp.task("watch", () => {
 
 // タスクの実行
 gulp.task("default", gulp.series(
-    gulp.parallel("browser", "watch")
+    gulp.parallel("sass")
 ));
