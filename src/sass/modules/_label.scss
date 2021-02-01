@@ -1,0 +1,27 @@
+@use "global/variables";
+
+.lfl-m-label__web,
+.lfl-m-label__blog,
+.lfl-m-label__gadget,
+.lfl-m-label__life-hack {
+    color: variables.$color-white;
+    font-size: 1.4rem;
+    padding: 8px 20px;
+}
+
+.lfl-m-label__web {
+    background: variables.$color-label-yellow;
+}
+.lfl-m-label__blog {
+    background: variables.$color-label-purple;
+}
+.lfl-m-label__gadget {
+    background: variables.$color-label-green;
+}
+.lfl-m-label__life-hack {
+    background: variables.$color-label-blue;
+}
+
+
+
+

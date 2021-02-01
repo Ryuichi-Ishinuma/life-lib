@@ -12,10 +12,18 @@
 @use "layout/header";
 @use "layout/footer";
 @use "layout/sidebar";
+@use "layout/component";
 
 // modules
 @use "modules/nav";
 @use "modules/selected";
+@use "modules/label";
+
+
+
+
+
+
 
 
 

@@ -1,0 +1,163 @@
+
+@use "global/variables";
+
+.#{lfl-o}-sidebar {
+    margin: 0;
+    max-width: 330px;
+    width: 100%;
+    .lfl-o-sidebar__widget {
+        &__item {
+            margin-bottom: 4rem;
+            &__head {
+                background: variables.$color-theme-blue;
+                padding: 18px 10px;
+                &__title {
+                    color: variables.$color-white;
+                    font-size: 1.6rem;
+                }
+            }
+            &__box {
+                background: variables.$color-white;
+                padding: 2rem;
+                &__link {
+                    cursor: pointer;
+                    display: block;
+                }
+                &__thumbnail {
+                    margin-bottom: 2rem;
+                    img {
+                        width: 100%;
+                    }
+                }
+                &__title {
+                    font-size: 1.6rem;
+                    font-weight: bold;
+                    line-height: 2.4rem;
+                }
+                &__icon {
+                    margin: 0 auto;
+                    text-align: center;
+                    padding: 2rem 0;
+                    height: 100px;
+                    width: 100px;
+                    img {
+                        width: 100%;
+                    }
+                }
+                &__name {
+                    font-size: 1.8rem;
+                    font-weight: bold;
+                    line-height: 1.6rem;
+                    text-align: center;
+                }
+                &__career {
+                    color: variables.$color-gray;
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                    padding-top: 1rem;
+                    text-align: center;
+                }
+                &__profile {
+                    font-size: 1.4rem;
+                    letter-spacing: 0.05em;
+                    line-height: 2.1rem;
+                    margin: 2rem 0;
+                    a {
+                        color: variables.$color-link;
+                        display: inline;
+                    }
+                }
+                &__sns {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    &__list {
+                        width: 140px;
+                        a {
+                            display: block;
+                            padding: 1.6rem 0;
+                            text-align: center;
+                        }
+                        &--twitter {
+                            background: variables.$color-twitter;
+                            margin-bottom: 1rem;
+                        }
+                        &--facebook {
+                            background: variables.$color-facebook;
+                            margin-bottom: 1rem;
+                        }
+                        &--feedly {
+                            background: variables.$color-feedly;
+                        }
+                        &--contact {
+                            background: variables.$color-contact;
+                        }
+                        &__name {
+                            color: variables.$color-white;
+                            font-size: 1.4rem;
+                            line-height: 1.4rem;
+                            margin-left: 1rem;
+                        }
+                    }
+                }
+            }
+            &__box--categories {
+                padding: 0;
+                li.cat-item {
+                    border-bottom: 1px solid variables.$color-border;
+                    display: flex;
+                    padding: 2rem;
+                    a {
+                        display: block;
+                        margin-right: 1rem;
+                        padding: 0;
+                    }
+                }
+                li.cat-item:last-child {
+                    border-bottom: none;
+                }
+            }
+            &__box--archives {
+                padding: 0;
+                li {
+                    border-bottom: 1px solid variables.$color-border;
+                    display: flex;
+                    padding: 2rem;
+                    a {
+                        display: block;
+                        margin-right: 1rem;
+                        padding: 0;
+                    }
+                }
+                li:last-child {
+                    border-bottom: none;
+                }
+            }
+            &__searchform {
+                background: variables.$color-white;
+                padding: 1.8rem 1rem;
+                input[type=text] {
+                    appearance: none;
+                    border: none;
+                    color: variables.$color-text-black;
+                    font-size: 1.6rem;
+                    height: 100%;
+                    line-height: 1.6rem;
+                    outline: 0;
+                    padding: 0;
+                    position: relative;
+                    width: 90%;
+                }
+                input[type=text]::focus::placeholder {
+                    color: transparent;
+                }
+                input[type=image] {
+                    height: 16px;
+                    width: 16px;
+                }
+            }
+        }
+    }
+}
+
+

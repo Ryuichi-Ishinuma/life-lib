@@ -26,7 +26,7 @@ const sourcemaps = require("gulp-sourcemaps");
 gulp.task("sass", done => {
     return (
         gulp
-            .src('src/sass/**.scss')
+            .src('src/sass/main.scss')
             .pipe(plumber(notify.onError('Error:<%= error.message %>')))
             .pipe(sourcemaps.init())
             .pipe(sass({
@@ -43,6 +43,7 @@ gulp.task("sass", done => {
 });
 
 
+
 gulp.task("browser", () => {
     browser.init({
         proxy: "/lifelib.net"
@@ -52,7 +53,7 @@ gulp.task("browser", () => {
 
 // ファイルを監視する
 gulp.task("watch", () => {
-    gulp.watch("src/sass/**.scss", gulp.task(["sass"]));
+    gulp.watch("src/sass/**/*.scss", gulp.task(["sass"]));
 });
 
 // タスクの実行

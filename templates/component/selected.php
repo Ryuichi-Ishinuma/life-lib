@@ -2,40 +2,40 @@
     <div class="lfl-m-selected__wrapper">
         <ul class="lfl-m-selected__post">
             <li class="lfl-m-selected__post__list">
-                <a href="#">
-                    <div class="lfl-m-selected__post__list__label">
-                        <img src="<?php echo get_template_directory_uri(); ?>" alt="WEB">
-                    </div>
+                <a href="<?php the_permalink(); ?>">
+                    <p class="lfl-m-selected__post__list__label lfl-m-label__web">
+                        <span class="lfl-m-selected__post__list__label__title">WEB</span>
+                    </p>
                     <div class="lfl-m-selected__post__list__thumbnail">
                         <img src="<?php echo get_template_directory_uri(); ?>">
                     </div>
                 </a>
             </li>
             <li class="lfl-m-selected__post__list">
-                <a href="#">
-                    <div class="lfl-m-selected__post__list__label">
-                        <img src="<?php echo get_template_directory_uri(); ?>" alt="">
-                    </div>
+                <a href="<?php the_permalink(); ?>">
+                    <p class="lfl-m-selected__post__list__label lfl-m-label__blog">
+                        <span class="lfl-m-selected__post__list__label__title">ブログ</span>
+                    </p>
                     <div class="lfl-m-selected__post__list__thumbnail">
                         <img src="<?php echo get_template_directory_uri(); ?>">
                     </div>
                 </a>
             </li>
             <li class="lfl-m-selected__post__list">
-                <a href="#">
-                    <div class="lfl-m-selected__post__list__label">
-                        <img src="<?php echo get_template_directory_uri(); ?>" alt="">
-                    </div>
+                <a href="<?php the_permalink(); ?>">
+                    <p class="lfl-m-selected__post__list__label lfl-m-label__gadget">
+                        <span class="lfl-m-selected__post__list__label__title">ガジェット</span>
+                    </p>
                     <div class="lfl-m-selected__post__list__thumbnail">
                         <img src="<?php echo get_template_directory_uri(); ?>">
                     </div>
                 </a>
             </li>
             <li class="lfl-m-selected__post__list">
-                <a href="#">
-                    <div class="lfl-m-selected__post__list__label">
-                        <img src="<?php echo get_template_directory_uri(); ?>" alt="">
-                    </div>
+                <a href="<?php the_permalink(); ?>">
+                    <p class="lfl-m-selected__post__list__label lfl-m-label__life-hack">
+                        <span class="lfl-m-selected__post__list__label__title">LIFE HACK</span>
+                    </p>
                     <div class="lfl-m-selected__post__list__thumbnail">
                         <img src="<?php echo get_template_directory_uri(); ?>">
                     </div>

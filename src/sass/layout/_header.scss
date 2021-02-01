@@ -3,14 +3,20 @@
 @use "../global/variables";
 
 .#{lfl-o}-header {
+    margin-bottom: 4rem;
     .lfl-m-header {
+        background: variables.$color-white;
         padding: 4rem 0 3rem;
         text-align: center;
         &__title {
-            margin-bottom: 2rem;
+            margin: 0 auto 2rem;
+            width: 240px;
+            img {
+                width: 100%;
+            }
         }
         &__subtitle {
-            margin-bottom: 3rem;
+            margin-bottom: 0;
         }
     }
 }

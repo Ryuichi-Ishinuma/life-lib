@@ -1,12 +1,21 @@
+@use "global/variables";
 
 html {
     font-size: 62.5%;
 }
 body {
+    background: variables.$color-bg;
+    font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
     font-size: 1.6rem;
 }
 
 .lfl-o-section__wrapper {
     margin: 0 auto;
+    max-width: 1080px;
+}
+.lfl-o-main {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 6rem;
     max-width: 1080px;
 }
