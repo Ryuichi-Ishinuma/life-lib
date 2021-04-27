@@ -2,7 +2,8 @@
 <?php get_template_part("templates/component/selected"); ?>
 
 <main class="lfl-o-main">
-    <?php get_template_part("templates/component/loop-content"); ?>
+    <section class="lfl-m-main__content">
+    </section>
     <?php get_sidebar(); ?>
 </main>
 

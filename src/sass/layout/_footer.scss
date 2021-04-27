@@ -12,26 +12,21 @@
             margin-bottom: 2rem;
             position: relative;
             &__list {
-                padding: 0 2rem;
                 position: relative;
+                border-right: 1px solid variables.$color-black;
                 a {
                     display: block;
                     font-size: 1.4rem;
                     line-height: 1.6rem;
+                    padding: 0 2rem;
                 }
                 a:hover {
                     text-decoration: underline;
                 }
             }
-            &__list:nth-child(1)::after {
-                border-right: 1px solid variables.$color-black;
-                content: '';
-                display: inline-block;
-                height: 14px;
-                width: 1px;
-                position: absolute;
-                top: 0;
-                left: 18rem
+
+            &__list:nth-child:last-child:after {
+                border-right: none;
             }
         }
         &__small {

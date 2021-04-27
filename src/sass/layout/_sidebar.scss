@@ -66,6 +66,9 @@
                         color: variables.$color-link;
                         display: inline;
                     }
+                    a:hover {
+                        text-decoration: underline;
+                    }
                 }
                 &__sns {
                     display: flex;
@@ -77,6 +80,7 @@
                             display: block;
                             padding: 1.6rem 0;
                             text-align: center;
+                            position: relative;
                         }
                         &--twitter {
                             background: variables.$color-twitter;
@@ -97,6 +101,8 @@
                             font-size: 1.4rem;
                             line-height: 1.4rem;
                             margin-left: 1rem;
+                            position: relative;
+                            top: -3px;
                         }
                     }
                 }
@@ -106,11 +112,18 @@
                 li.cat-item {
                     border-bottom: 1px solid variables.$color-border;
                     display: flex;
-                    padding: 2rem;
+                    position: relative;
                     a {
+                        cursor: pointer;
                         display: block;
-                        margin-right: 1rem;
                         padding: 0;
+                        padding: 2rem;
+                        width: 100%;
+                        height: 100%;
+                        position: relative;
+                    }
+                    a:hover {
+                        text-decoration: underline;
                     }
                 }
                 li.cat-item:last-child {
@@ -127,6 +140,9 @@
                         display: block;
                         margin-right: 1rem;
                         padding: 0;
+                    }
+                    a:hover {
+                        text-decoration: underline;
                     }
                 }
                 li:last-child {

@@ -2,21 +2,6 @@
     <ul class="lfl-o-sidebar__widget">
         <li class="lfl-o-sidebar__widget__item">
             <div class="lfl-o-sidebar__widget__item__head">
-                <p class="lfl-o-sidebar__widget__item__head__title">別運営ブログ人気記事 - numablog -</p>
-            </div>
-            <div class="lfl-o-sidebar__widget__item__box">
-                <a class="lfl-o-sidebar__widget__item__box__link" href="https://numablog.net" target="_blank" alt="別運営ブログ人気記事 - numablog -">
-                    <div class="lfl-o-sidebar__widget__item__box__thumbnail">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/techacademy_webdesign_course.png" alt="【体験談】テックアカデミー Webデザインコースを受講してみて">
-                    </div>
-                    <p class="lfl-o-sidebar__widget__item__box__title">【体験談】テックアカデミー Webデザインコースを受講してみて</p>
-                </a>
-            </div>
-        </li>
-
-
-        <li class="lfl-o-sidebar__widget__item">
-            <div class="lfl-o-sidebar__widget__item__head">
                 <p class="lfl-o-sidebar__widget__item__head__title">ぬまっちのプロフィール</p>
             </div>
             <div class="lfl-o-sidebar__widget__item__box">
@@ -24,7 +9,7 @@
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon_profile.jpg">
                 </p>
                 <p class="lfl-o-sidebar__widget__item__box__name">ぬまっち</p>
-                <p class="lfl-o-sidebar__widget__item__box__career">Webデザイナー／ブロガー</p>
+                <p class="lfl-o-sidebar__widget__item__box__career">Webディレクター兼デザイナー／ブロガー</p>
                 <p class="lfl-o-sidebar__widget__item__box__profile">デジタルエージェンシー(デジタル広告の代理店)でWebデザイナーとして働きながらブログの運営をしています。<br>
                 <br>
                 新卒で銀行員になるも金融系の資格勉強よりオリジナル雑誌の制作に没頭してしまい、デザインや発信に興味を持つ。4ヶ月の猛勉強を経て、未経験でWebデザイナーとしてキャリアチェンジし現職に至る。<br>
@@ -107,5 +92,19 @@
                 </ul>
             </div>
         </li>
+
+        <!-- <li class="lfl-o-sidebar__widget__item">
+            <div class="lfl-o-sidebar__widget__item__head">
+                <p class="lfl-o-sidebar__widget__item__head__title">別運営ブログ人気記事 - numablog -</p>
+            </div>
+            <div class="lfl-o-sidebar__widget__item__box">
+                <a class="lfl-o-sidebar__widget__item__box__link" href="https://numablog.net/techacademy-webdesign-course/" target="_blank" alt="別運営ブログ人気記事 - numablog -">
+                    <div class="lfl-o-sidebar__widget__item__box__thumbnail">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/techacademy_webdesign_course.png" alt="【体験談】テックアカデミー Webデザインコースを受講してみて">
+                    </div>
+                    <p class="lfl-o-sidebar__widget__item__box__title">【体験談】テックアカデミー Webデザインコースを受講してみて</p>
+                </a>
+            </div>
+        </li> -->
     </ul>
 </section>

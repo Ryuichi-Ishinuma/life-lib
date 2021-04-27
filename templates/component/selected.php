@@ -3,7 +3,7 @@
         <ul class="lfl-m-selected__post">
             <li class="lfl-m-selected__post__list">
                 <a href="<?php the_permalink(); ?>">
-                    <p class="lfl-m-selected__post__list__label lfl-m-label__web">
+                    <p class="lfl-m-selected__post__list__label web">
                         <span class="lfl-m-selected__post__list__label__title">WEB</span>
                     </p>
                     <div class="lfl-m-selected__post__list__thumbnail">
@@ -13,7 +13,7 @@
             </li>
             <li class="lfl-m-selected__post__list">
                 <a href="<?php the_permalink(); ?>">
-                    <p class="lfl-m-selected__post__list__label lfl-m-label__blog">
+                    <p class="lfl-m-selected__post__list__label blog">
                         <span class="lfl-m-selected__post__list__label__title">ブログ</span>
                     </p>
                     <div class="lfl-m-selected__post__list__thumbnail">
@@ -23,7 +23,7 @@
             </li>
             <li class="lfl-m-selected__post__list">
                 <a href="<?php the_permalink(); ?>">
-                    <p class="lfl-m-selected__post__list__label lfl-m-label__gadget">
+                    <p class="lfl-m-selected__post__list__label gadget">
                         <span class="lfl-m-selected__post__list__label__title">ガジェット</span>
                     </p>
                     <div class="lfl-m-selected__post__list__thumbnail">
@@ -33,7 +33,7 @@
             </li>
             <li class="lfl-m-selected__post__list">
                 <a href="<?php the_permalink(); ?>">
-                    <p class="lfl-m-selected__post__list__label lfl-m-label__life-hack">
+                    <p class="lfl-m-selected__post__list__label life-hack">
                         <span class="lfl-m-selected__post__list__label__title">LIFE HACK</span>
                     </p>
                     <div class="lfl-m-selected__post__list__thumbnail">
